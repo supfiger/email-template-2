@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #e5e5e5;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+
+td {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+div {
+  line-height: 1.6;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  background: #fff;
+  overflow: auto;
+}
+
+.containerIn {
+  padding: 53px 60px 48px;
+}
+
+.avatarWrap {
+  width: 55px;
+  height: 55px;
+  border: 1.6px solid #000000;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.avatarWrap div {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 23px;
+}
+
+.avatarWrap:before {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  content: "";
+}
+
+.infoWrap {
+  margin-bottom: 120px;
+}
+
+.titleWrap {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.infoBlock {
+  margin-bottom: 35px;
+}
+
+.infoBlock:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  color: #000000;
+  opacity: 0.4;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.caption {
+  font-size: 21px;
+}
+
+.socialWrap {
+  text-align: center;
+}
+
+.socialLinks a {
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.socialLinks a img {
+  width: 14px;
+  opacity: 0.4;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .containerIn {
+    padding: 42px 29px 47px;
+  }
+
+  .avatarWrap {
+    width: 40px;
+    height: 40px;
+    border: 1.2px solid;
+    margin-bottom: 60px;
+  }
+
+  .avatarWrap div {
+    font-size: 16px;
+  }
+
+  .titleWrap {
+    font-size: 21px;
+    margin-bottom: 32px;
+  }
+
+  .infoWrap {
+    margin-bottom: 55px;
+  }
+
+  .title {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+
+  .infoBlock {
+    margin-bottom: 30px;
+  }
+}
