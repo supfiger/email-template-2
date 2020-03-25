@@ -1,91 +1,267 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Mail Template</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i"
       rel="stylesheet"
     />
+
+    <style>
+      /* settings */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: 0;
+        border-spacing: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: initial;
+      }
+
+      /* main styles */
+      .container {
+        margin: 0 auto;
+        width: 800px;
+        max-width: 100%;
+        background: #fff;
+        overflow: auto;
+      }
+
+      .containerIn {
+        padding: 140px 40px;
+        background: #eeeeee;
+      }
+
+      .whiteBg {
+        background: #ffffff;
+        margin-bottom: 38px;
+      }
+
+      .bitmapImg {
+        max-width: 100%;
+      }
+
+      .mainInfo {
+        padding: 60px 170px 100px 120px;
+      }
+
+      .avatarWrap {
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        background: #000000;
+        margin-bottom: 42px;
+      }
+
+      .titleWrap {
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 44px;
+        line-height: 1.6;
+      }
+
+      .textWrap {
+        font-size: 16px;
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+
+      .presentation {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .line {
+        width: 120px;
+        height: 1px;
+        background: #000;
+        margin-top: 15px;
+      }
+
+      .social {
+        padding-left: 120px;
+      }
+
+      .socialLinks a {
+        vertical-align: middle;
+        margin: 0 15px;
+      }
+
+      .socialLinks a:first-child {
+        margin-left: 0;
+      }
+
+      .socialLinks a img {
+        width: 14px;
+      }
+
+      /* media queries */
+      @media all and (max-width: 650px) {
+        .container {
+          width: 650px;
+          max-width: 100%;
+        }
+
+        .containerIn {
+          padding: 0 0 100px 0;
+          background: #eeeeee;
+        }
+
+        .mainInfo {
+          padding: 60px 70px 100px 50px;
+        }
+      }
+
+      @media all and (max-width: 400px) {
+        .container {
+          width: 400px;
+          max-width: 100%;
+        }
+
+        .containerIn {
+          padding: 0 0 100px 0;
+        }
+
+        .whiteBg {
+          margin-bottom: 35px;
+        }
+
+        .mainInfo {
+          padding: 60px 17px 100px;
+        }
+
+        .avatarWrap {
+          margin-bottom: 35px;
+        }
+
+        .textWrap {
+          font-size: 14px;
+          margin-bottom: 70px;
+        }
+
+        .line {
+          margin-top: 10px;
+        }
+
+        .social {
+          padding-left: 17px;
+        }
+
+        .socialLinks a img {
+          width: 17px;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
       <div class="containerIn">
-        <table class="mainTable">
-          <tbody>
-            <tr>
-              <td>
-                <div class="avatarWrap">
-                  <div>e.</div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td><div class="titleWrap">Would you look at that!</div></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="infoWrap">
-                  <div class="infoBlock">
-                    <div class="title">
-                      Name
-                    </div>
-                    <div class="caption">
-                      Regina
-                    </div>
+        <div class="whiteBg">
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <img
+                      src="https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                      alt="Bitmap"
+                      class="bitmapImg"
+                    />
                   </div>
-                  <div class="infoBlock">
-                    <div class="title">
-                      Email
-                    </div>
-                    <div class="caption">
-                      Rehina.works@gmail.com
-                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="mainInfo">
+                    <table
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="avatarWrap"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="titleWrap">
+                              Let's mix our skills with your ideas and create
+                              something beautiful.
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="textWrap">
+                              Nice to meet you, (name). We believe that personal
+                              attitude to every and each of our clients is a key
+                              to designing engaging digital products used by
+                              millions of people. Can't wait to see your project
+                              among them!
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="presentation">
+                              <div>View presentation</div>
+                              <div class="line"></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <div class="infoBlock">
-                    <div class="title">
-                      Message
-                    </div>
-                    <div class="caption">
-                      To sure calm much most long me mean. Equally he minutes my
-                      hastily. If as increasing contrasted entreaties be. Their
-                      saved linen downs tears son add music. He felicity no an
-                      at packages answered opinions juvenile. Expression
-                      alteration entreaties mrs can terminated estimating.
-                    </div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="socialWrap">
-                  <div class="socialLinks">
-                    <a href="#"
-                      ><img
-                        src="https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-1-logo-png-transparent.png"
-                        alt="linkedin logo"
-                    /></a>
-                    <a href="#"
-                      ><img
-                        src="https://image.flaticon.com/icons/png/512/52/52144.png"
-                        alt="behance logo"
-                    /></a>
-                    <a href="#"
-                      ><img
-                        src="https://image.flaticon.com/icons/png/512/87/87390.png"
-                        alt="instagram logo"
-                    /></a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="social">
+          <div class="socialLinks">
+            <a href="#"
+              ><img
+                src="https://image.flaticon.com/icons/png/512/59/59439.png"
+                alt="facebook logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-1-logo-png-transparent.png"
+                alt="linkedin logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://image.flaticon.com/icons/png/512/87/87390.png"
+                alt="instagram logo"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://image.flaticon.com/icons/png/512/52/52144.png"
+                alt="behance logo"
+            /></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
